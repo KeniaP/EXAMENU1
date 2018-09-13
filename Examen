@@ -1,0 +1,72 @@
+//EXAMEN//PEREZ LOPEZ KENIA JANET 14212338//
+//ING. INFORMATICA//DATOS MASIVOS//
+//PROF.CHRISTIAN ROMERO//BDD-1704/TI9A//
+//UNIDAD 1//
+
+    //--*EJERCICIO1*--//7
+
+def par (num: Int): Boolean={
+    if(num % 2 == 0){
+      return true
+    }
+  return false
+}
+
+println(par(5))
+
+
+     //--*EJERCICIO2*--//
+
+def pares (numeros: Int): Boolean={
+    if (numeros % 2 == 0) {
+      return true
+    }
+  return false
+}
+val listas = List(2,3,4,5)
+var a = 0
+for(a <- listas){
+  if (a <= a) {
+    print("El valor " + a + " es: ")
+    println(pares(a))
+  }
+}
+
+
+     //--*EJERCICIO3*--//
+
+Val suerte = List(5,7)
+def  sumas(doble: List[Int]): Int={
+  var sumando = 0
+  for (n <- suerte){
+    if(n == 7){
+      sumando += n*2
+    }else {
+      sumando += n
+    }
+  }
+  return sumando
+  }
+println(sumas(suerte))
+
+
+    //--*Ejercicio 4*--//
+
+val lista = List(2,1,4,3)
+def balancear (balanceando: List[Int]): Boolean={
+  val (a,b) = balanceando.splitAt(balanceando.length/2)
+  if (a.sum == b.sum){ return true }
+  else
+  return false
+}
+println(balancear(lista))
+println("")
+
+
+     //--*Ejercicio 5*--//
+
+def polindromo (palabra:String): Boolean = {
+return
+(palabra == palabra.reverse)
+}
+println polindromo: (palabra("AnnA"))
